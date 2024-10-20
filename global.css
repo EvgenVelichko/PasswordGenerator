@@ -1,0 +1,133 @@
+/** @format */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8em;
+}
+
+.password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+
+input#password {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button#generateBtn {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#generateBtn:hover {
+    background-color: #218838;
+}
+
+.options {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type='range'] {
+    width: 100%;
+}
+
+.checkboxes label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#strengthBar {
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#copyMessage {
+    margin-top: 10px;
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input#password {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    button#generateBtn {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    input#password {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    button#generateBtn {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+}
