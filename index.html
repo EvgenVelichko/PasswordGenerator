@@ -1,0 +1,68 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link
+            rel="shortcut icon"
+            href="./src/assets/favicon.png"
+            type="image/x-icon" />
+
+        <link rel="stylesheet" href="global.css" />
+        <link rel="stylesheet" href="adaptation.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>PasswordGenerator</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Генератор паролів</h1>
+
+            <div class="password-container">
+                <input
+                    type="text"
+                    id="password"
+                    readonly
+                    placeholder="Ваш пароль буде тут"
+                    onclick="copyPassword()" />
+                <button id="generateBtn">Генерувати</button>
+            </div>
+
+            <div class="options">
+                <label>Довжина пароля: <span id="lengthValue">12</span></label>
+                <input
+                    type="range"
+                    id="lengthSlider"
+                    min="8"
+                    max="30"
+                    value="12" />
+
+                <div class="checkboxes">
+                    <label
+                        ><input type="checkbox" id="includeUppercase" checked />
+                        Великі літери</label
+                    >
+                    <label
+                        ><input type="checkbox" id="includeLowercase" checked />
+                        Малі літери</label
+                    >
+                    <label
+                        ><input type="checkbox" id="includeNumbers" checked />
+                        Цифри</label
+                    >
+                    <label
+                        ><input type="checkbox" id="includeSymbols" />
+                        Символи</label
+                    >
+                </div>
+            </div>
+
+            <div id="strengthBar"></div>
+            <p id="copyMessage" class="hidden">Текст скопійовано!</p>
+        </div>
+
+        <script src="./src/services/generator.js"></script>
+    </body>
+</html>
