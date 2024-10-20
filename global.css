@@ -35,7 +35,7 @@ h1 {
 }
 
 input#password {
-    width: 100%;
+    width: 95%;
     padding: 15px;
     font-size: 1.2em;
     border: 2px solid #ccc;
